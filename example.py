@@ -1,4 +1,4 @@
-import climenu.menu as menu
+from climenu.menu import create_menu, run_menu
 
 
 def proc1():
@@ -53,5 +53,5 @@ if __name__ == '__main__':
         ('3.home', 'Домой', None),
     ]
 
-    cm = menu.create_menu(description, 'Главное меню')
-    menu.run_menu(cm)
+    cm = create_menu(description, 'Главное меню')
+    run_menu(cm)
